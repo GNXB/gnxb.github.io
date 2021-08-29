@@ -1,0 +1,69 @@
+body {
+  font-family: 'Open Sans';
+}
+
+.besley {
+  font-family: 'Besley';
+}
+
+#wrapper {
+  /* background: linear-gradient(180deg, #ea4c00 0%, #ff6a00 100%) repeat-x; */
+  background: linear-gradient(180deg, #ff4700 40%, #ffd744 100%) repeat-x;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#wrapper:before {
+  /* content: '';
+  background: linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.6) 100%);
+  box-shadow: inset 0 -50px 200px rgba(0, 0, 0, 0.8); */
+
+  content: '';
+  background: linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.5) 100%);
+  box-shadow: inset 0 -20px 100px rgb(0 0 0 / 50%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid {
+  background: linear-gradient(0deg, transparent 0, transparent 49px, rgba(0,0,0,0.4) 50px, rgba(0,0,0,0.4) 50px, transparent 51px, transparent 100px);
+  background-size: auto 100px;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.grid-rotate {
+  transform: rotate(90deg);
+  margin: auto;
+  height: 200%;
+}
+
+.mybox {
+  position: relative;
+}
+
+.mybox .bg, .mybox .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mybox .content {
+  padding: 15px;
+}
+
+#main-container {
+  margin: 200px auto;
+  padding: 0;
+  width: 400px;
+}
