@@ -1,3 +1,5 @@
+.gitignore
 *.zip
 *.DS_Store
 *jquery.min.js
+bak

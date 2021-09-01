@@ -1,69 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,400,700");
+.outerflow, .banner-filter, .mountain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; }
+
 body {
-  font-family: 'Open Sans';
+  font-family: 'Helvetica Neue'; }
+
+.clear {
+  clear: both; }
+
+.bg-dark {
+	background-color: #aaa;
 }
 
-.besley {
-  font-family: 'Besley';
-}
+.navbar-brand {
+  background-image: url(../img/GNXB-Logo.png);
+	background-size: contain;
+	margin-top: 5px;
+	margin-left: 15px;
+	width: 83px;
+	height: 26px; }
 
-#wrapper {
-  /* background: linear-gradient(180deg, #ea4c00 0%, #ff6a00 100%) repeat-x; */
-  background: linear-gradient(180deg, #ff4700 40%, #ffd744 100%) repeat-x;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-#wrapper:before {
-  /* content: '';
-  background: linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.6) 100%);
-  box-shadow: inset 0 -50px 200px rgba(0, 0, 0, 0.8); */
-
-  content: '';
-  background: linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.5) 100%);
-  box-shadow: inset 0 -20px 100px rgb(0 0 0 / 50%);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.grid {
-  background: linear-gradient(0deg, transparent 0, transparent 49px, rgba(0,0,0,0.4) 50px, rgba(0,0,0,0.4) 50px, transparent 51px, transparent 100px);
-  background-size: auto 100px;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.grid-rotate {
-  transform: rotate(90deg);
-  margin: auto;
-  height: 200%;
-}
-
-.mybox {
+.banner-bg {
+  background: linear-gradient(180deg, #fbfbfb 0%, #ffbc00 100%) repeat-x #ffbc00;
   position: relative;
-}
+  height: 400px; }
 
-.mybox .bg, .mybox .content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+.banner-filter {
+  content: '';
+  background: linear-gradient(180deg, transparent 0, rgba(255, 255, 255, 0.6) 100%);
+  box-shadow: inset 0 -50px 200px rgba(0, 0, 0, 0.8); }
 
-.mybox .content {
-  padding: 15px;
-}
+.banner-crop {
+  height: 100px;
+  overflow: hidden; }
 
+section {
+  margin: 20px 0; }
+  section.highlight {
+    background-color: #eceeef; }
+
+footer nav {
+  background: none; }
+  footer nav ul {
+    margin-left: 15px; }
+    footer nav ul li a.nav-link-edit {
+      color: #888;
+      padding-top: 0.625rem !important;
+      font-size: 0.8rem; }
+      footer nav ul li a.nav-link-edit:hover {
+        color: #666;
+        text-decoration: underline; }
+
+footer address {
+  margin-left: 15px;
+  font-size: 0.8rem; }
+
+.label_box {
+  /*position: relative;
+    display: inline-block;
+    padding: 7px 7px 20px;
+    color: #c5c5c5;
+    font-size: 44px;
+    font-family: "Cardo";
+    line-height: 37px;
+    text-align: justify;
+    text-align-last: justify;
+    border: 3px solid #cccccc;
+    word-break: break-word;*/
+  position: relative;
+  display: inline-block;
+  margin: 20px 0;
+  padding: 2px 10px;
+  color: #6d6d6d;
+  font-size: 20px;
+  font-weight: lighter;
+  border: 1px solid; }
+
+.main-content, .pane-detail {
+  background: #fff;
+  min-height: 300px; }
+
+.card_box {
+  float: left;
+  width: 177px; }
+  .card_box .card_image {
+    background: #eceeef;
+    width: 175px;
+    height: 175px; }
+  .card_box .card_body {
+    padding: 10px;
+    height: 67px; }
+  .card_box:first-child {
+    margin-left: 0; }
+  .card_box a .card_title {
+    color: #444; }
+  .card_box a:hover {
+    text-decoration: none; }
+    .card_box a:hover .card_title {
+      color: #0275d8; }
+
+#page-portfolio {
+  position: relative;
+  padding-top: 100px;
+  min-height: 300px; }
+  #page-portfolio .banner-bg, #page-portfolio .header-aura, #main-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;}
+	#page-portfolio .banner-bg, #page-portfolio .header-aura {
+		height: 300px; }
+  #page-portfolio .banner-filter {
+    box-shadow: inset 0 50px 200px rgba(0, 0, 0, 0.8); }
+  #page-portfolio .header-aura {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 30%, #fff); }
+		
 #main-container {
-  margin: 200px auto;
-  padding: 0;
-  width: 400px;
+	perspective: 3000px;
+	overflow: hidden;
+}
+
+.sub-window {
+	transition: all 0.5s ease 0s;
+}
+
+.pane-detail {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transform: rotateY(0deg) translateZ(0px) translateX(600px);
+}
+
+#main-container.detail-open .main-content {
+	transform: rotateY(-30deg) translateZ(-500px) translateX(-50px);
+}
+
+#main-container.detail-open .pane-detail {
+	transform: rotateY(0deg) translateZ(0px) translateX(0px);
+	opacity: 1;
 }

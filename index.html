@@ -3,38 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Besley">
-  <link rel="stylesheet" href="dist/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="dist/bootstrap-grid.min.css">
+  <!-- <link rel="stylesheet" href="dist/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="dist/bootstrap-grid.min.css"> -->
+  <link rel="stylesheet" href="dist/bootstrap.min.css">
   <link rel="stylesheet" href="dist/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="dist/bootstrap.min.js"></script>
+  <script src="dist/main.js"></script>
   <title>GNXB - Official Site</title>
 </head>
 <body>
-  <div id="wrapper">
-    <div class="grid"></div>
-    <div class="grid grid-rotate"></div>
-    <div id="main-container" class="container">
-      <div class="mybox">
-        <div class="bg">
-          <svg viewBox="0 0 200 100">
-            <polygon points="0,0 0,100 180,100 200,80 200,0" fill="rgba(255,255,255,0.8)"/>
-          </svg>
-        </div>
-        <div class="content">
-          <!-- <p>Home</p> -->
-          <h1 class="besley"><strong>Apiwith</strong> Potisuk</h1>
-          <p class="besley">Pentester</p>
-          <ul>
-            <li><a href="https://gnxb.github.io">Home</a></li>
-            <li>Blog</li>
-            <li><a href="https://gist.github.com/gnxb">Gist</a></li>
+  <div id="page-portfolio">
+    <header class="banner-bg">
+      <div class="banner-filter"></div>
+    </header>
+    <div class="header-aura"></div>
+
+    <nav id="main-navbar" class="navbar navbar-static-top navbar-light">
+      <div class="container">
+        <a href="/" class="navbar-brand"></a>
+        <div class="col-md-2 col-xs-12 float-md-right">
+          <ul class="nav navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://medium.com/@kengnaireji">Medium</a></li>
           </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <div id="main-container" class="container">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 main-content sub-window">
+        <div class="col-md-12">
+          <div class="row">
+            <div>
+              <div class="label_box">Main Directory</div>
+            </div>
+            <div>
+              <div class="card_box">
+                <a href="#" id="bt-profile">
+                  <div class="card_image"></div>
+                  <div class="card_body">
+                    <h5 class="card_title">Profile</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="card_box">
+                <a href="#">
+                  <div class="card_image"></div>
+                  <div class="card_body">
+                    <h5 class="card_title">Dummy</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12 pane-detail sub-window">
+        <div class="row">
+          <div>
+            <div class="label_box">Profile</div>
+            <a href="#" id="bt-back" class="label_box bg-dark">&lt;</a>
+          </div>
+          <div class="p-2">
+            <h3>Apiwith Potisuk</h3>
+            <p>Pentester</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="dist/main.js"></script>
+
+  <footer class="container-fluid">
+    <nav class="navbar col-md-3 col-xs-12">
+      <a href="/" class="navbar-brand"></a>
+      <ul class="nav navbar-nav col-xs-12">
+        <li class="nav-item">
+          <a href="https://github.com/gnxb" target="blank" class="nav-link nav-link-edit">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/apiwith-potisuk-1a61b6108" target="blank"
+            class="nav-link nav-link-edit">LinkedIn</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="col-md-3 col-xs-12 float-md-right">
+      &copy; 2021 All right reserved | <a href="https://www.instagram.com/kengnaireji/" target="blank">@ApiwithPotisuk</a>
+      <br>
+      Bangkok, Thailand.
+    </address>
+  </footer>
 </body>
 </html>
