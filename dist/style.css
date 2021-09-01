@@ -127,6 +127,7 @@ footer address {
 
 .sub-window {
 	transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
 }
 
 .pane-detail {
@@ -134,13 +135,16 @@ footer address {
 	top: 0;
 	opacity: 0;
 	transform: rotateY(0deg) translateZ(0px) translateX(600px);
+	-webkit-transform: rotateY(0deg) translateZ(0px) translateX(600px);
 }
 
 #main-container.detail-open .main-content {
 	transform: rotateY(-30deg) translateZ(-500px) translateX(-50px);
+	-webkit-transform: rotateY(-30deg) translateZ(-500px) translateX(-50px);
 }
 
 #main-container.detail-open .pane-detail {
 	transform: rotateY(0deg) translateZ(0px) translateX(0px);
+	-webkit-transform: rotateY(0deg) translateZ(0px) translateX(0px);
 	opacity: 1;
 }
