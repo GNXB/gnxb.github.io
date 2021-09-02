@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:200,400,700");
+/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:200,400,700"); */
+@import url("https://fonts.googleapis.com/css?family=Inter:200,400,700");
+
 .outerflow, .banner-filter, .mountain {
   position: absolute;
   top: 0;
@@ -8,7 +10,7 @@
   margin: auto; }
 
 body {
-  font-family: 'Helvetica Neue'; }
+  font-family: 'Helvetica Neue', Inter; }
 
 .clear {
   clear: both; }
@@ -127,7 +129,7 @@ footer address {
 
 .sub-window {
 	transition: all 0.5s ease 0s;
-	-webkit-transition: all 0.5s ease 0s;
+	-webkit-transition: -webkit-transform 0.5s ease 0s;
 }
 
 .pane-detail {
